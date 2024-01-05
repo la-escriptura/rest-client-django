@@ -1,0 +1,165 @@
+/*assetvalidation*/
+body {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	background-image: url(../img/logo.png);
+	background-color: #000080;
+	background-attachment: fixed;
+}
+
+#wrapper {
+	padding: 30px 20px 30px 20px;
+	margin: 10px auto 10px auto; 
+	width: 1600px;
+	min-height: 1200px;
+	background-color: #fdf8f2;
+}
+
+#main {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	width: 100%;
+	font: normal 11px arial;
+}
+
+#label {
+	border-radius: 25px;
+	box-shadow: 3px 3px #888888;
+	padding: 30px 0 30px 0;
+	margin: 0 0 7px 0;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 48px;
+	font-weight: bold;
+	background-color: #800000;
+	color: #ffffff;
+}
+
+#asset {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+#host {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	float: left;
+}
+
+#hostnames {
+	padding: 0 0 0 0;
+	margin: 0 3px 0 0;
+	width: 795px;
+	height: 100px;
+}
+
+#ip {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+#ipaddresses {
+	padding: 0 0 0 0;
+	margin: 0 0 0 3px;
+	width: 795px;
+	height: 100px;
+}
+
+#validate {
+	padding: 5px 0 0 0;
+	margin-left: auto; 
+	margin-right: 0;
+	width: 400px;
+}
+
+#tool {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	float: left;
+}
+
+#sectool {
+	padding: 0 0 0 0;
+	margin: 0 3px 0 0;
+	width: 297px;
+}
+
+#btn {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+#exe {
+	padding: 0 0 0 0;
+	margin: 0 0 0 3px;
+	width: 95px;
+}
+
+#dt {
+	padding: 15px 0 0 0;
+	margin: 0 0 0 0;
+	float: left;
+}
+
+#download {
+	padding: 15px 0 0 0;
+	margin: 0 0 0 0;
+	text-align: right;
+}
+
+#data {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.dataframe {
+	border-collapse:collapse;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	width: 100%;
+}
+
+.dataframe tr td {
+	border: 1px solid gray;
+}
+
+.dataframe th {
+	border: 1px solid gray;
+	padding: 0 7px 0 0;
+	font-weight: normal;
+	text-align: right;
+}
+
+.dataframe tr:first-child {
+	font: bold 14px arial;
+	background-color: #A5A5A5;
+	position: sticky;
+	top: 0;
+}
+
+.dataframe tr:first-child th {
+	color: #A5A5A5;
+}
+
+.dataframe tr:first-child td {
+	color: white;
+	text-align: center;
+}
+
+
+
+.dataframe tr:nth-child(odd) th {
+	
+}
+
+.dataframe tr:nth-child(even) th {
+	background-color: #EDEDED;
+}
+
+.dataframe tr:nth-child(odd) td {
+	
+}
+
+.dataframe tr:nth-child(even) td {
+	background-color: #EDEDED;
+}

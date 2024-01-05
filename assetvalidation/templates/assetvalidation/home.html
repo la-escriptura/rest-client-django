@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asset Validation</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'assetvalidation/css/index.css' %}" />
+</head>
+<body>
+    <form id="frm" method="post">
+		{% csrf_token %}
+		<div id="wrapper">
+			<div id="main">
+				<div id="label">Security Engineering Real-time Asset Validation</textarea></div>
+				<div id="asset">
+					<div id="host"><textarea name="hostnames" id="hostnames" placeholder='Input "Hostname" here separated by space or line-break.'></textarea></div>
+					<div id="ip"><textarea name="ipaddresses" id="ipaddresses" placeholder='Input "IP Address" here separated by space or line-break.'></textarea></div>
+				<div>
+				<div id="validate">
+					<div id="tool">
+						<select name="sectool" id="sectool">
+							<option value="" selected disabled>Select the "Source System" here.</option>
+							<option value="tw"  {% if sectool == 'tw'    %}selected{% endif %}>Tripwire</option>
+							<option value="cbp" {% if sectool == 'cbp'   %}selected{% endif %}>Carbon Black Protect</option>
+							<option value="cbc" {% if sectool == 'cbc'   %}selected{% endif %}>Carbon Black Cloud</option>
+							<option value="zs"  {% if sectool == 'zs'    %}selected{% endif %}>Zscaler</option>
+							<option value="bfx" {% if sectool == 'bfx'   %}selected{% endif %}>BigFix</option>
+						</select>
+					</div>
+					<div id="btn"><input type="submit" id="exe" /></div>
+				</div>
+				<div id="dt">{% if assetvalidation is not None %}timestamp/sectool/elapsed time: {{ dt }} / {{ sectool }} / {{ tm }}{% endif %}</div>
+				<div id="download">{% if assetvalidation is not None %}<a href="{% url 'csvexport' %}">Export to CSV</a>{% endif %}</div>
+				<div id="data">
+	{{ assetvalidation | safe }}
+				</div
+			</div>
+		</div>
+    </form>
+</body>
+</html>
